@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ArteLoah</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+  </style>
+</head>
+<body class="bg-white text-gray-900">
+
+  <!-- HEADER -->
+  <header class="bg-gradient-to-r from-green-400 to-teal-400 px-6 py-4 flex justify-between items-center shadow-md">
+    <div class="flex items-center space-x-2 font-bold text-white text-xl">
+      🎨 <span>ArtEloah</span>
+    </div>
+    <nav class="space-x-4 hidden md:flex text-white font-medium">
+      <a href="#inicio">Início</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <!-- Botão Fazer Orçamento (no header) -->
+<a href="https://wa.me/5521970721544?text=Olá!%20Gostaria%20de%20fazer%20um%20orçamento." 
+target="_blank"
+class="bg-white text-pink-600 px-4 py-2 rounded-full font-semibold">
+Fazer Orçamento
+</a>
+
+  </header>
+
+  <!-- HERO -->
+  <section class="bg-gradient-to-r from-purple-700 to-pink-500 text-white py-16 px-6 text-center" id="inicio">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">Sublimação com Arte e Qualidade</h1>
+    <p class="max-w-2xl mx-auto mb-6 text-lg">Transformamos suas ideias em produtos personalizados incríveis! Blusas, canecas, azulejos e muito mais.</p>
+    <div class="space-x-4">
+      <a href="#produtos" class="bg-yellow-400 text-black px-6 py-2 font-bold rounded-full">Ver Catálogo</a>
+      <!-- Botão Fale Conosco (no Hero) -->
+<a href="https://wa.me/5521970721544?text=Olá!%20Gostaria%20de%20falar%20com%20a%20ArteLoah." 
+target="_blank"
+class="border-2 border-white px-6 py-2 rounded-full font-bold">
+Fale Conosco
+</a>
+
+    </div>
+  </section>
+
+  <!-- POR QUE ESCOLHER -->
+  <section class="py-16 px-6 text-center bg-white">
+    <h2 class="text-3xl font-bold mb-4">Por que escolher a <span class="text-pink-600">ArtEloah</span>?</h2>
+    <p class="mb-10 text-gray-600">Qualidade e criatividade em cada produto personalizado</p>
+    <img src="img/demostracao.png" style="display: block; margin: auto;" alt="Descrição da imagem">
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+      <div class="bg-pink-50 p-6 rounded-lg shadow-sm">
+        <p class="text-2xl mb-2">✨</p>
+        <h3 class="font-bold text-lg">Alta Qualidade</h3>
+        <p class="text-gray-600 text-sm">Materiais premium e equipamentos modernos garantem o melhor resultado.</p>
+      </div>
+      <div class="bg-blue-50 p-6 rounded-lg shadow-sm">
+        <p class="text-2xl mb-2">🎨</p>
+        <h3 class="font-bold text-lg">Design Personalizado</h3>
+        <p class="text-gray-600 text-sm">Criamos de forma exclusiva ou trabalhamos com sua ideia.</p>
+      </div>
+      <div class="bg-yellow-50 p-6 rounded-lg shadow-sm">
+        <p class="text-2xl mb-2">⚡</p>
+        <h3 class="font-bold text-lg">Entrega Rápida</h3>
+        <p class="text-gray-600 text-sm">Produção ágil para você receber no menor tempo possível.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUTOS -->
+  <section class="py-16 px-6 bg-gray-50" id="produtos">
+    <h2 class="text-3xl font-bold text-center mb-4">Nossos Produtos</h2>
+    <p class="text-center text-gray-600 mb-8">Confira nossa variedade de produtos personalizáveis</p>
+
+    <!-- Filtros -->
+    <div class="flex flex-wrap justify-center gap-3 mb-6">
+      <button class="filter-btn bg-pink-200 px-4 py-1 rounded-full" data-filter="todos">Todos</button>
+      <button class="filter-btn bg-pink-300 px-4 py-1 rounded-full" data-filter="Blusas">Blusas</button>
+      <button class="filter-btn bg-yellow-200 px-4 py-1 rounded-full" data-filter="Canecas">Canecas</button>
+      <button class="filter-btn bg-blue-200 px-4 py-1 rounded-full" data-filter="Azulejos">Azulejos</button>
+      <button class="filter-btn bg-purple-200 px-4 py-1 rounded-full" data-filter="Bolsas">Bolsas</button>
+      <button class="filter-btn bg-green-200 px-4 py-1 rounded-full" data-filter="Chaveiros">Chaveiros</button>
+    </div>
+
+    <!-- Produtos -->
+    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto" id="produtos-lista">
+      <!-- Exemplo de produto -->
+      <div class="produto card bg-blue-100 p-4 rounded-lg shadow" data-categoria="Blusas">
+        <p class="text-sm text-pink-600 font-bold mb-1">Blusas</p>
+        <h3 class="font-bold text-lg">Blusa Branca Personalizada Frente</h3>
+        <p class="text-sm text-gray-600">Poliéster 100% para sublimação.</p>
+        <img src="img/branca.jpg" >
+
+        <p class="text-pink-600 font-bold mt-2">R$ 24,90</p>
+        
+      </div>
+      <div class="produto card bg-blue-100 p-4 rounded-lg shadow" data-categoria="Blusas">
+        <p class="text-sm text-pink-600 font-bold mb-1">Blusas</p>
+        <h3 class="font-bold text-lg">Blusa Branca Personalizada Frente/costas</h3>
+        <p class="text-sm text-gray-600">Poliéster 100% para sublimação.</p>
+        <img src="img/branca.jpg" >
+
+        <p class="text-pink-600 font-bold mt-2">R$ 29,90</p>
+        
+      </div>
+
+      <div class="produto card bg-pink-100 p-4 rounded-lg shadow" data-categoria="Blusas">
+        <p class="text-sm text-pink-600 font-bold mb-1">Blusas</p>
+        <h3 class="font-bold text-lg">Blusa Colorida Personalizada Frente</h3>
+        <p class="text-sm text-gray-600">Blusas coloridas com detalhes.</p>
+        <img src="img/colorida.jpg" >
+        <p class="text-pink-600 font-bold mt-2">R$ 29,90,90</p>
+        
+      </div>
+      <div class="produto card bg-pink-100 p-4 rounded-lg shadow" data-categoria="Blusas">
+        <p class="text-sm text-pink-600 font-bold mb-1">Blusas</p>
+        <h3 class="font-bold text-lg">Blusa Colorida Personalizada Frente/costas</h3>
+        <p class="text-sm text-gray-600">Blusas coloridas com detalhes.</p>
+        <img src="img/colorida.jpg" >
+        <p class="text-pink-600 font-bold mt-2">R$ 34,90</p>
+        
+      </div>
+
+      <div class="produto card bg-yellow-100 p-4 rounded-lg shadow" data-categoria="Canecas">
+        <p class="text-sm text-pink-600 font-bold mb-1">Canecas</p>
+        <h3 class="font-bold text-lg">Caneca Sublimada</h3>
+        <p class="text-sm text-gray-600">Sua arte favorita na caneca.</p>
+        <img src="img/caneca.jpg" >
+        <p class="text-pink-600 font-bold mt-2">R$ 29,90</p>
+        
+      </div>
+
+      <div class="produto card bg-blue-100 p-4 rounded-lg shadow" data-categoria="Azulejos">
+        <p class="text-sm text-pink-600 font-bold mb-1">Azulejos</p>
+        <h3 class="font-bold text-lg">Azulejo Personalizado</h3>
+        <p class="text-sm text-gray-600">Alta qualidade 10x10cm.</p>
+        <img src="img/azulejo.jpg" >
+        <p class="text-pink-600 font-bold mt-2">R$ 14,90</p>
+        
+      </div>
+      <div class="produto card bg-blue-100 p-4 rounded-lg shadow" data-categoria="Azulejos">
+        <p class="text-sm text-pink-600 font-bold mb-1">Azulejos</p>
+        <h3 class="font-bold text-lg">Azulejo Personalizado</h3>
+        <p class="text-sm text-gray-600">Alta qualidade 20x20cm.</p>
+        <img src="img/azulejo.jpg" >
+        <p class="text-pink-600 font-bold mt-2">R$ 29,90</p>
+        
+      </div>
+
+      <div class="produto card bg-purple-100 p-4 rounded-lg shadow" data-categoria="Bolsas">
+        <p class="text-sm text-pink-600 font-bold mb-1">Bolsas</p>
+        <h3 class="font-bold text-lg">Bolsa para Festa 20x29cm</h3>
+        <p class="text-sm text-gray-600">Ideal para festas.</p>
+        <p class="text-pink-600 font-bold mt-2">R$ 5,99</p>
+        <img src="img/sacochilaa.jpg" >
+        
+      </div>
+      <div class="produto card bg-purple-100 p-4 rounded-lg shadow" data-categoria="Bolsas">
+        <p class="text-sm text-pink-600 font-bold mb-1">Bolsas</p>
+        <h3 class="font-bold text-lg">Bolsa para Festa 10x15cm</h3>
+        <p class="text-sm text-gray-600">Ideal para festas.</p>
+        <p class="text-pink-600 font-bold mt-2">R$ 3,49</p>
+        <img src="img/sacochilaa.jpg" >
+        
+      </div>
+
+      <div class="produto card bg-green-100 p-4 rounded-lg shadow" data-categoria="Chaveiros">
+        <p class="text-sm text-pink-600 font-bold mb-1">Chaveiros</p>
+        <h3 class="font-bold text-lg">Chaveiro Personalizado 9x9cm</h3>
+        <p class="text-sm text-gray-600">Em tecido oxford com sua arte.</p>
+        <img src="img/almochaveiros.jpg" >
+        <p class="text-pink-600 font-bold mt-2">R$ 1,90/p>
+        
+      </div>
+      <div class="produto card bg-purple-100 p-4 rounded-lg shadow" data-categoria="Bolsas">
+        <p class="text-sm text-pink-600 font-bold mb-1">Diversos</p>
+        <h3 class="font-bold text-lg">Sua ideia aqui!</h3>
+        <p class="text-sm text-gray-600">Solicite sua ideia.</p>
+        <p class="text-pink-600 font-bold mt-2">R$ ?</p>
+        <img src="img/suaideia.jpg" >
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- ORÇAMENTO -->
+  <section class="py-16 text-center bg-gradient-to-r from-purple-600 to-pink-500 text-white" id="orcamento">
+    <h2 class="text-2xl font-bold mb-2">Pronto para personalizar seus produtos?</h2>
+    <p class="mb-4">Entre em contato conosco hoje mesmo!</p>
+    <!-- Botão Solicitar Orçamento (na seção Orçamento) -->
+<a href="https://wa.me/5521970721544?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20personalizado." 
+target="_blank"
+class="bg-pink-100 text-pink-700 px-6 py-2 rounded-full font-bold">
+Solicitar Orçamento
+</a>
+
+  </section>
+
+  <!-- CONTATO -->
+  <section class="py-16 px-6 bg-white" id="contato">
+    <div class="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto">
+      <div>
+        <h3 class="font-bold text-xl mb-4">Informações de Contato</h3>
+        <ul class="space-y-2 text-gray-700">
+          <li>📍 Rua general fernando batalha, Campinho RJ</li>
+          <li>📞 (21)97522-6529  (21) 970721544</li>
+          <li>📧 maricasenanegocios@gmail.com</li>
+          <li>🕘 Segunda a Sábado: 9h às 18h</li>
+        </ul>
+        <div class="mt-4 space-x-3 text-2xl text-pink-500">
+          <span>📷</span><span>📘</span><span>💬</span>
+        </div>
+      </div>
+      <!-- FORMULÁRIO -->
+<form class="space-y-4" onsubmit="enviarParaWhatsapp(event)">
+    <input id="nome" type="text" placeholder="Seu nome" class="w-full border p-2 rounded" required />
+    <input id="email" type="email" placeholder="Seu email" class="w-full border p-2 rounded" required />
+    <input id="telefone" type="tel" placeholder="Seu telefone" class="w-full border p-2 rounded" required />
+    <textarea id="mensagem" placeholder="Mensagem" class="w-full border p-2 rounded h-32" required></textarea>
+    <button type="submit" class="bg-purple-600 text-white px-4 py-2 rounded">Enviar Mensagem</button>
+  </form>
+  
+    </div>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer class="bg-gray-800 text-white text-sm py-6 px-6">
+    <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      <div>
+        <h4 class="font-bold mb-2">🎨 ArteLoah</h4>
+        <p>Transformando ideias em produtos incríveis.</p>
+      </div>
+      <div>
+        <h4 class="font-bold mb-2">Produtos</h4>
+        <ul>
+          <li>Blusas</li>
+          <li>Canecas</li>
+          <li>Azulejos</li>
+          <li>Bolsas</li>
+        </ul>
+      </div>
+      <div>
+        
+        
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Filtro de produtos
+    const buttons = document.querySelectorAll('.filter-btn');
+    const produtos = document.querySelectorAll('.produto');
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const filtro = btn.dataset.filter;
+        produtos.forEach(p => {
+          p.style.display = (filtro === 'todos' || p.dataset.categoria === filtro) ? 'block' : 'none';
+        });
+      });
+    });
+  </script>
+  <script>
+    function enviarParaWhatsapp(e) {
+      e.preventDefault();
+  
+      const nome = document.getElementById('nome').value;
+      const email = document.getElementById('email').value;
+      const telefone = document.getElementById('telefone').value;
+      const mensagem = document.getElementById('mensagem').value;
+  
+      const texto = `Olá! Gostaria de entrar em contato.\n\n👤 Nome: ${nome}\n📧 Email: ${email}\n📞 Telefone: ${telefone}\n📝 Mensagem: ${mensagem}`;
+      const url = `https://wa.me/5521970721544?text=${encodeURIComponent(texto)}`;
+      
+      window.open(url, '_blank');
+    }
+  </script>
+  
+</body>
+</html>
